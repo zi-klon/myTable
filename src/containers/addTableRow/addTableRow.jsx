@@ -4,7 +4,7 @@ import {Switch, Route, withRouter} from 'react-router-dom';
 import connector from './connector';
 import dispatcher from './dispatcher';
 
-const Form = ({
+const AddTableRow = ({
     gotoTable
 }) => {
     return (
@@ -18,4 +18,4 @@ const Form = ({
     );
 };
 
-export default withRouter(connect(connector, dispatcher)(Form));
+export default withRouter(connect(connector, dispatcher)(AddTableRow));
