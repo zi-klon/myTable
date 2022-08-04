@@ -1,19 +1,34 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {Switch, Route, withRouter} from 'react-router-dom';
+
 import connector from './connector';
 import dispatcher from './dispatcher';
+import useStyles from './styles';
+
+import Form from '../../components/form/form.jsx';
 
 const AddTableRow = ({
-    gotoTable
+    form,
+    gotoTable,
+    setTitle,
+    setDate,
+    setSeason,
+    setEpisode,
 }) => {
+
+    const classes = useStyles();
+
     return (
         <div>
-            <h1>Form</h1>
-            <p>Здесь будет форма</p>
-            <button onClick={gotoTable}>
-                Переход к таблице
-            </button>
+            <h1>Форма добавления нового эпизода</h1>
+            <Form
+                form={form}
+                submit={gotoTable}
+                setTitle={setTitle}
+                setDate={setDate}
+                setSeason={setSeason}
+                setEpisode={setEpisode}/>
         </div>
     );
 };

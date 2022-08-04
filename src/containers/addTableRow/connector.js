@@ -1,5 +1,7 @@
-export default function (store) {
+export default function ({Store: {
+    form
+}}) {
     return {
-
+        form
     }
 }

@@ -12,6 +12,7 @@ const App = ({
         path
     }
 }) => {
+
     const useStyles = createUseStyles({
         appContainer: {
             position: 'relative',
@@ -24,6 +25,7 @@ const App = ({
         }
     });
     const classes = useStyles();
+
     return (
         <div className={classes.appContainer}>
             <Modal/>

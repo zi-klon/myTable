@@ -1,6 +1,11 @@
 const defaultState = {
     tableData: [],
-    form: {},
+    form: {
+        episode: '',
+        title: '',
+        air_date: '',
+        season: ''
+    },
     modal: {
         display: false,
         message: null,
@@ -42,6 +47,42 @@ export default function Reducer(state = defaultState, {type, payload}) {
                     canReject: payload.canReject,
                     resolve: payload.resolve,
                     display: true
+                }
+            };
+
+        case 'SET_SEASON':
+            return {
+                ...state,
+                form: {
+                    ...state.form,
+                    season: payload
+                }
+            };
+
+        case 'SET_TITLE':
+            return {
+                ...state,
+                form: {
+                    ...state.title,
+                    title: payload
+                }
+            };
+
+        case 'SET_DATE':
+            return {
+                ...state,
+                form: {
+                    ...state.air_date,
+                    air_date: payload
+                }
+            };
+
+        case 'SET_EPISODE':
+            return {
+                ...state,
+                form: {
+                    ...state.episode,
+                    episode: payload
                 }
             };
     }

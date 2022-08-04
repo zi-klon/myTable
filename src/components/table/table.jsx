@@ -1,68 +1,15 @@
 import React, {useState, useMemo} from 'react';
-import {createUseStyles} from 'react-jss'
 
+import useStyles from './styles';
 
 const Table = ({
     data = [],
     deleteTableRow
 }) => {
-    const useStyles = createUseStyles({
-        table: {
-            borderTop: 'none',
-            width: '90%',
-            '& > table': {
-                borderCollapse: 'collapse',
-                width: '100%',
-                '& > thead': {
-                    '& > tr': {
-                        borderBottom: '2px solid #98acb3',
-                        '& > th': {
-                            padding: 10,
-                            borderRight: '2px solid #98acb3'
-                        },
-                        '& :last-child': {
-                            borderRight: 'none'
-                        }
-                    }
-                },
-                '& > tbody': {
-                    '& > tr': {
-                        borderBottom: '2px solid #98acb3',
-                        '& > td': {
-                            padding: 10,
-                            borderRight: '2px solid #98acb3',
-                            boxSizing: 'border-box',
-                            '& > button': {
-                                backgroundColor: '#db7d7d',
-                                border: 'none',
-                                width: '100%',
-                                height: 25,
-                            },
-                            '& :hover': {
-                                color: 'red'
-                            }
-                        },
-                    },
-                    '& :last-child': {
-                        borderRight: 'none'
-                    },
-                    '& :hover': {
-                        cursor: 'pointer',
-                        backgroundColor: '#d8ebed',
-                        transition: 'background-color .7s'
-                    }
-                }
-            }
-        },
-        placeholder: {
-            padding: 30,
-            height: 80,
-            fontSize: 20,
-            textAlign: 'center'
-        }
-    });
+
     const classes = useStyles();
     const [tableData, setTableData] = useState(data);
+
     return (
         <div className={classes.table}>
             {data.length ?
@@ -70,7 +17,7 @@ const Table = ({
                     <thead>
                     <tr>
                         <th>
-                            Номер эпизода
+                            Порядковый номер
                         </th>
                         <th>
                             Название эпизода
@@ -79,10 +26,10 @@ const Table = ({
                             Дата выхода
                         </th>
                         <th>
-                            Номер сезона/ Номер эпизода
+                            Номер сезона
                         </th>
                         <th>
-                            Персонажи
+                            Номер эпизода
                         </th>
                         <th/>
                     </tr>
@@ -92,7 +39,6 @@ const Table = ({
                         episode_id,
                         episode,
                         title,
-                        characters,
                         air_date,
                         season
                     }) => (
@@ -100,8 +46,8 @@ const Table = ({
                             <td>{episode_id}</td>
                             <td>{title}</td>
                             <td>{air_date}</td>
-                            <td>{`Сезон ${season} эпизод ${episode}`}</td>
-                            <td>{characters.length ? 'yes' : 'no'}</td>
+                            <td>{`Сезон ${season}`}</td>
+                            <td>{`Эпизод ${episode}`}</td>
                             <td>
                                 <button onClick={() => deleteTableRow({id: episode_id, title})}>
                                     Удалить
