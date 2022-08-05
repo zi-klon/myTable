@@ -27,6 +27,12 @@ const Main = ({
         setDisplayPreloader(false);
     };
 
+    const savedTableData = 'savedTableData' in sessionStorage
+        ? JSON.parse(sessionStorage.getItem('savedTableData'))
+        : null;
+
+    const currentData = savedTableData || tableData;
+
     return (
         <Page title='Список эпизодов сериала «Во все тяжкие»'>
             <Preloader display={displayPreloader}/>
@@ -34,7 +40,7 @@ const Main = ({
                 <button onClick={gotoForm}>
                     Добавить эпизод
                 </button>
-                {tableData.length ?
+                {currentData.length ?
                     <button onClick={clearTable}>
                         Очистить таблицу
                     </button>
@@ -45,7 +51,7 @@ const Main = ({
                 }
             </Buttons>
             <Table
-                data={tableData}
+                data={currentData}
                 deleteTableRow={deleteTableRow}
                 clearTable={clearTable}/>
         </Page>

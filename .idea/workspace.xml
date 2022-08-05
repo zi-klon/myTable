@@ -2,41 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64e04448-b91d-467f-a8f5-db892b9a3ab6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/modal/modal.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/modal/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/page/components/buttons/buttons.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/page/components/buttons/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/page/page.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/page/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/addTableRow/middlewares/addRow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/addTableRow/middlewares/validateForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/actions/clearForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/main/middlewares/clearTable.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/form/form.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form/form.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/form/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/input/input.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/input/input.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/input/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/input/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/addTableRow/actions/setDate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/setDate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/addTableRow/actions/setEpisode.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/setEpisode.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/addTableRow/actions/setSeason.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/setSeason.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/addTableRow/actions/setTitle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/setTitle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/addTableRow/addTableRow.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/addTableRow/addTableRow.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/addTableRow/dispatcher.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/addTableRow/dispatcher.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/addTableRow/styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/main/actions/clearTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/clearTable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/main/actions/deleteTableRow.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/main/middlewares/deleteTableRow.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/main/actions/getTableData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/main/middlewares/getTableData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/main/actions/setTableData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/setTableData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/preloader/preloader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/preloader/preloader.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/preloader/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/preloader/styles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/main/dispatcher.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/main/dispatcher.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/main/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/main/main.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/main/styles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/modal/actions/closeModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/closeModal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/modal/actions/createModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/modal/middlewares/createModal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/modal/actions/openModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/openModal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/modal/modal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/modal/modal.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/modal/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/modal/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/main/middlewares/getTableData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/main/middlewares/getTableData.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +44,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../zpk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -152,7 +127,8 @@
       <workItem from="1659434954300" duration="26478000" />
       <workItem from="1659499330770" duration="37762000" />
       <workItem from="1659626050770" duration="14104000" />
-      <workItem from="1659671549838" duration="13913000" />
+      <workItem from="1659671549838" duration="14249000" />
+      <workItem from="1659711259613" duration="7127000" />
     </task>
     <task id="LOCAL-00001" summary="Routing, Redux, Api">
       <created>1659465602500</created>
@@ -182,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659641898677</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Form, inputs, page component">
+      <created>1659685746269</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1659685746269</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,17 +176,18 @@
     <MESSAGE value="Table actions" />
     <MESSAGE value="Table actions, modal, css styles" />
     <MESSAGE value="Form, inputs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Form, inputs" />
+    <MESSAGE value="Form, inputs, page component" />
+    <option name="LAST_COMMIT_MESSAGE" value="Form, inputs, page component" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#ESLint" timestamp="1659449685275">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#ESLint/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1659449685275" />
-    <state x="138" y="27" width="1718" height="873" key="CommitChangelistDialog2" timestamp="1659685503654">
+    <state x="138" y="27" width="1718" height="873" key="CommitChangelistDialog2" timestamp="1659685744923">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="138" y="27" width="1718" height="873" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1659685503654" />
+    <state x="138" y="27" width="1718" height="873" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1659685744923" />
     <state x="84" y="55" key="DiffContextDialog" timestamp="1659528011179">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -212,22 +196,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1659679798701" />
-    <state width="1899" height="143" key="GridCell.Tab.0.bottom" timestamp="1659685503710">
+    <state width="1899" height="143" key="GridCell.Tab.0.bottom" timestamp="1659685806573">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="143" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1659685503710" />
-    <state width="1899" height="143" key="GridCell.Tab.0.center" timestamp="1659685503710">
+    <state width="1899" height="143" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1659685806573" />
+    <state width="1899" height="143" key="GridCell.Tab.0.center" timestamp="1659685806572">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="143" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1659685503710" />
-    <state width="1899" height="143" key="GridCell.Tab.0.left" timestamp="1659685503710">
+    <state width="1899" height="143" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1659685806572" />
+    <state width="1899" height="143" key="GridCell.Tab.0.left" timestamp="1659685806572">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="143" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1659685503710" />
-    <state width="1899" height="143" key="GridCell.Tab.0.right" timestamp="1659685503710">
+    <state width="1899" height="143" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1659685806572" />
+    <state width="1899" height="143" key="GridCell.Tab.0.right" timestamp="1659685806573">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="143" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1659685503710" />
+    <state width="1899" height="143" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1659685806573" />
     <state x="461" y="162" key="SettingsEditor" timestamp="1659449257461">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

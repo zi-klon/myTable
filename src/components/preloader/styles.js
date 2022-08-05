@@ -11,22 +11,8 @@ export default createUseStyles({
         height: '100%',
         position: 'absolute'
     },
-    circle: {
-        width: 70,
-        height: 70,
-        border: '5px solid #98acb3',
-        borderRadius: '50%',
-        borderTop: 'none',
-        borderLeft: 'none',
-        animation: 'spin 2s infinite linear'
-    },
-
-    '@keyframes spin': {
-        from: {
-            transform: 'rotate(0deg)'
-        },
-        to: {
-            transform: 'rotate(360deg)'
-        }
+    text: {
+        font: '60px bold',
+        color: '#f7f0f0',
     }
 });

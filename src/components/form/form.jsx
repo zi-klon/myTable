@@ -49,7 +49,10 @@ const Form = ({
                     value={episode}
                     change={setEpisode}/>
 
-                <input type="submit" value="Подтвердить"/>
+                <input
+                    type="submit"
+                    value="Подтвердить"
+                    id="submit"/>
             </form>
         </div>
     );

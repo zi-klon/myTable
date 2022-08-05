@@ -8,7 +8,7 @@ const Preloader = ({
     const classes = useStyles();
     return display && (
         <div className={classes.container}>
-            <div className={classes.circle}/>
+            <p className={classes.text}>Загрузка...</p>
         </div>
     )
 };

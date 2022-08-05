@@ -6,6 +6,7 @@ export default createUseStyles({
         padding: [[20, 20, 10]],
         borderBottom: '2px solid #98acb3',
         justifyContent: 'space-between',
+        backgroundColor: '#d8ebed',
         '& > input': {
             border: 'none',
             width: '50%',

@@ -1,6 +1,6 @@
 import GetTableData from './middlewares/getTableData';
 import DeleteTableRow from './middlewares/deleteTableRow';
-import ClearTable from '../../redux/actions/clearTable';
+import ClearTable from './middlewares/clearTable';
 
 export default function (dispatch, {history}) {
     return {
