@@ -1,35 +1,40 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {Switch, Route, withRouter} from 'react-router-dom';
+import {withRouter} from 'react-router-dom';
 
 import connector from './connector';
 import dispatcher from './dispatcher';
-import useStyles from './styles';
 
+import Page from '../../components/page/page.jsx';
+import Buttons from '../../components/page/components/buttons/buttons.jsx';
 import Form from '../../components/form/form.jsx';
 
 const AddTableRow = ({
     form,
-    gotoTable,
+
+    addRow,
     setTitle,
     setDate,
     setSeason,
     setEpisode,
+    gotoTable
 }) => {
 
-    const classes = useStyles();
-
     return (
-        <div>
-            <h1>Форма добавления нового эпизода</h1>
+        <Page title='Форма добавления нового эпизода'>
+            <Buttons>
+                <button onClick={gotoTable}>
+                    Вернуться к списку
+                </button>
+            </Buttons>
             <Form
                 form={form}
-                submit={gotoTable}
+                submit={addRow}
                 setTitle={setTitle}
                 setDate={setDate}
                 setSeason={setSeason}
                 setEpisode={setEpisode}/>
-        </div>
+        </Page>
     );
 };
 

@@ -1,5 +1,5 @@
-import SetTableData from './setTableData';
-import CreateModal from '../../modal/actions/createModal';
+import SetTableData from '../../../redux/actions/setTableData';
+import CreateModal from '../../modal/middlewares/createModal';
 
 export default function deleteTableRow({id, title}) {
     return async (dispatch, getStore) => {

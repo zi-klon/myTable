@@ -1,14 +1,6 @@
 import {createUseStyles} from 'react-jss'
 
 export default createUseStyles({
-    tableContainer: {
-        width: '80%',
-        backgroundColor: '#6fbad1',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        position: 'relative'
-    },
     buttonContainer: {
         padding: 20,
         display: 'flex',
@@ -27,11 +19,5 @@ export default createUseStyles({
                 transition: 'background-color .5s'
             }
         }
-    },
-    title: {
-        width: '100%',
-        height: 80,
-        backgroundColor: '#98acb3',
-        textAlign: 'center'
     }
 });

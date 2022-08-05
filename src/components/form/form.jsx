@@ -2,7 +2,7 @@ import React from 'react';
 
 import useStyles from './styles';
 
-import Input from '../../components/input/input.jsx';
+import Input from '../input/input.jsx';
 
 const Form = ({
     form: {
@@ -20,33 +20,38 @@ const Form = ({
 
     const classes = useStyles();
 
-    return (
-        <form>
-            <Input
-                type="text"
-                title="Название эпизода"
-                value={title}
-                change={setTitle}/>
-            <Input
-                type="date"
-                title="Дата выхода"
-                value={air_date}
-                change={setDate}/>
-            <Input
-                type="number"
-                title="Номер сезона"
-                value={season}
-                change={setSeason}/>
-            <Input
-                type="number"
-                title="Номер эпизода"
-                value={episode}
-                change={setEpisode}/>
+    const submitForm = evt => {
+        evt.preventDefault();
+        submit();
+    };
 
-            <button onSubmit={submit}>
-                Переход к таблице
-            </button>
-        </form>
+    return (
+        <div className={classes.form}>
+            <form onSubmit={submitForm}>
+                <Input
+                    type="text"
+                    title="Название эпизода"
+                    value={title}
+                    change={setTitle}/>
+                <Input
+                    type="date"
+                    title="Дата выхода"
+                    value={air_date}
+                    change={setDate}/>
+                <Input
+                    type="number"
+                    title="Номер сезона"
+                    value={season}
+                    change={setSeason}/>
+                <Input
+                    type="number"
+                    title="Номер эпизода"
+                    value={episode}
+                    change={setEpisode}/>
+
+                <input type="submit" value="Подтвердить"/>
+            </form>
+        </div>
     );
 };
 

@@ -1,5 +1,5 @@
 import Fetch from '../../../api/fetch';
-import SetTableData from './setTableData';
+import SetTableData from '../../../redux/actions/setTableData';
 
 export default function getTableData(){
     return async dispatch => {

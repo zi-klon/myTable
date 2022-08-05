@@ -4,10 +4,11 @@ import {withRouter} from 'react-router-dom';
 
 import connector from './connector';
 import dispatcher from './dispatcher';
-import useStyles from './styles';
 
 import Table from '../../components/table/table.jsx';
 import Preloader from '../../components/preloader/preloader.jsx';
+import Page from '../../components/page/page.jsx';
+import Buttons from '../../components/page/components/buttons/buttons.jsx';
 
 const Main = ({
     tableData = [],
@@ -18,8 +19,6 @@ const Main = ({
     clearTable
 
 }) => {
-
-    const classes = useStyles();
     const [displayPreloader, setDisplayPreloader] = useState(false);
 
     const loadData = async () => {
@@ -29,9 +28,9 @@ const Main = ({
     };
 
     return (
-        <div className={classes.tableContainer}>
+        <Page title='Список эпизодов сериала «Во все тяжкие»'>
             <Preloader display={displayPreloader}/>
-            <div className={classes.buttonContainer}>
+            <Buttons>
                 <button onClick={gotoForm}>
                     Добавить эпизод
                 </button>
@@ -44,15 +43,12 @@ const Main = ({
                         Загрузить список эпизодов
                     </button>
                 }
-            </div>
-            <div className={classes.title}>
-                <h2>Список эпизодов сериала «Во все тяжкие»</h2>
-            </div>
+            </Buttons>
             <Table
                 data={tableData}
                 deleteTableRow={deleteTableRow}
                 clearTable={clearTable}/>
-        </div>
+        </Page>
     );
 };
 

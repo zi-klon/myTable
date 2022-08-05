@@ -11,10 +11,11 @@ const Input = ({
 }) => {
 
     const getValue = (value, type) => {
+        const currentValue = value || '';
         if(type === 'number') {
-            return value.replace(/[^0-9]/g, '');
+            return currentValue.replace(/[^0-9]/g, '');
         } else {
-            return value;
+            return currentValue;
         }
     };
 

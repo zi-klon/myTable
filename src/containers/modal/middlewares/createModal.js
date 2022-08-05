@@ -1,5 +1,5 @@
-import OpenModal from './openModal';
-import CloseModal from './closeModal';
+import OpenModal from '../../../redux/actions/openModal';
+import CloseModal from '../../../redux/actions/closeModal';
 
 export default function CreateModal(data) {
     return async dispatch => {
