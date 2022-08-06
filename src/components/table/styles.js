@@ -4,6 +4,9 @@ export default createUseStyles({
     table: {
         borderTop: 'none',
         width: '90%',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
         '& > table': {
             borderCollapse: 'collapse',
             width: '100%',
@@ -53,5 +56,22 @@ export default createUseStyles({
         height: 80,
         fontSize: 20,
         textAlign: 'center'
+    },
+    paginationButtons: {
+        padding: 10,
+        display: 'flex',
+        width: '50%',
+        justifyContent: 'space-between',
+        '& button': {
+            border: '2px solid #98acb3',
+            width: 40,
+            backgroundColor: '#d8ebed',
+            height: 30
+        },
+        '& :hover': {
+            cursor: 'pointer',
+            transition: 'background-color .7s',
+            backgroundColor: 'white'
+        }
     }
 });

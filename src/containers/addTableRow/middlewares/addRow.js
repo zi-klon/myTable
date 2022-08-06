@@ -21,6 +21,9 @@ export default function AddTableRow(gotoTable) {
             episode_id: tableData?.length + 1
         }];
 
+        sessionStorage.clear();
+        sessionStorage.setItem('savedTableData', JSON.stringify(newTableData));
+
         dispatch(SetTableData(newTableData));
         dispatch(ClearForm());
 

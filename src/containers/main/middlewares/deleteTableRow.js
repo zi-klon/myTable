@@ -19,6 +19,9 @@ export default function deleteTableRow({id, title}) {
 
             const filteredData = tableData.filter(({episode_id}) => id !== episode_id);
             dispatch(SetTableData(filteredData));
+
+            sessionStorage.clear();
+            sessionStorage.setItem('savedTableData', JSON.stringify(filteredData));
         }
     }
 }

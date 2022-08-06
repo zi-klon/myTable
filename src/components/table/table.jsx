@@ -1,4 +1,4 @@
-import React, {useState, useMemo} from 'react';
+import React, {useState, useMemo, useEffect} from 'react';
 
 import useStyles from './styles';
 
@@ -8,11 +8,36 @@ const Table = ({
 }) => {
 
     const classes = useStyles();
-    const [tableData, setTableData] = useState(data);
+
+    const [tableData, setTableData] = useState([]);
+    const [currentPage, setCurrentPage] = useState(1);
+
+    const setPage = value => {
+        const end = value * 10;
+        const begin = end - 10;
+
+        setTableData(data.slice(begin, end));
+        setCurrentPage(value);
+
+        return (data.slice(begin, end)).length;
+    };
+
+    useEffect(() => {
+
+        if(!setPage(currentPage) && currentPage !== 1) {
+            setPage(currentPage - 1);
+            setCurrentPage(currentPage - 1);
+        }
+    }, [data]);
+
+    const buttonsArr = new Array(Math.ceil(data?.length / 10))
+        .fill(1)
+        .map((item, index) => item + index);
 
     return (
         <div className={classes.table}>
-            {data.length ?
+            {tableData.length ?
+                <>
                 <table>
                     <thead>
                     <tr>
@@ -35,7 +60,7 @@ const Table = ({
                     </tr>
                     </thead>
                     <tbody>
-                    {data.map(({
+                    {tableData.map(({
                         episode_id,
                         episode,
                         title,
@@ -57,9 +82,22 @@ const Table = ({
                     ))}
                     </tbody>
                 </table>
-                : <div className={classes.placeholder}>
-                    Необходимо загрузить список эпизодов
-                </div>
+                    <div className={classes.paginationButtons}>
+                        {buttonsArr.length > 1
+                            ? buttonsArr.map(item => (
+                                <button
+                                    onClick={() => setPage(item)}
+                                    key={item}>
+                                    {item}
+                                </button>
+                            ))  : null
+                        }
+                    </div>
+                </>
+            :
+            <div className={classes.placeholder}>
+                Необходимо загрузить список эпизодов
+            </div>
             }
         </div>
     );

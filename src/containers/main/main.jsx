@@ -29,9 +29,9 @@ const Main = ({
 
     const savedTableData = 'savedTableData' in sessionStorage
         ? JSON.parse(sessionStorage.getItem('savedTableData'))
-        : null;
+        : [];
 
-    const currentData = savedTableData || tableData;
+    const currentData = tableData.length && tableData || savedTableData;
 
     return (
         <Page title='Список эпизодов сериала «Во все тяжкие»'>

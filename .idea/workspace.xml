@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64e04448-b91d-467f-a8f5-db892b9a3ab6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/containers/main/middlewares/clearTable.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/form/form.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form/form.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/form/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/input/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/input/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/preloader/preloader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/preloader/preloader.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/preloader/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/preloader/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/main/dispatcher.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/main/dispatcher.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/table/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/table/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/table/table.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/table/table.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/addTableRow/middlewares/addRow.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/addTableRow/middlewares/addRow.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/main/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/main/main.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/main/middlewares/getTableData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/main/middlewares/getTableData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/main/middlewares/deleteTableRow.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/main/middlewares/deleteTableRow.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +41,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../zpk" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -128,7 +125,8 @@
       <workItem from="1659499330770" duration="37762000" />
       <workItem from="1659626050770" duration="14104000" />
       <workItem from="1659671549838" duration="14249000" />
-      <workItem from="1659711259613" duration="7127000" />
+      <workItem from="1659711259613" duration="7211000" />
+      <workItem from="1659768157374" duration="12087000" />
     </task>
     <task id="LOCAL-00001" summary="Routing, Redux, Api">
       <created>1659465602500</created>
@@ -165,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659685746269</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Form style, preloader, save table data">
+      <created>1659719142798</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1659719142798</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,41 +182,42 @@
     <MESSAGE value="Table actions, modal, css styles" />
     <MESSAGE value="Form, inputs" />
     <MESSAGE value="Form, inputs, page component" />
-    <option name="LAST_COMMIT_MESSAGE" value="Form, inputs, page component" />
+    <MESSAGE value="Form style, preloader, save table data" />
+    <option name="LAST_COMMIT_MESSAGE" value="Form style, preloader, save table data" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#ESLint" timestamp="1659449685275">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#ESLint/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1659449685275" />
-    <state x="138" y="27" width="1718" height="873" key="CommitChangelistDialog2" timestamp="1659685744923">
+    <state x="138" y="27" width="1718" height="873" key="CommitChangelistDialog2" timestamp="1659780566025">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="138" y="27" width="1718" height="873" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1659685744923" />
+    <state x="138" y="27" width="1718" height="873" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1659780566025" />
     <state x="84" y="55" key="DiffContextDialog" timestamp="1659528011179">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="84" y="55" key="DiffContextDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1659528011179" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1659679798701">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1659769636561">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1659679798701" />
-    <state width="1899" height="143" key="GridCell.Tab.0.bottom" timestamp="1659685806573">
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1659769636561" />
+    <state width="1899" height="98" key="GridCell.Tab.0.bottom" timestamp="1659778583925">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="143" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1659685806573" />
-    <state width="1899" height="143" key="GridCell.Tab.0.center" timestamp="1659685806572">
+    <state width="1899" height="98" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1659778583925" />
+    <state width="1899" height="98" key="GridCell.Tab.0.center" timestamp="1659778583925">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="143" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1659685806572" />
-    <state width="1899" height="143" key="GridCell.Tab.0.left" timestamp="1659685806572">
+    <state width="1899" height="98" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1659778583925" />
+    <state width="1899" height="98" key="GridCell.Tab.0.left" timestamp="1659778583925">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="143" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1659685806572" />
-    <state width="1899" height="143" key="GridCell.Tab.0.right" timestamp="1659685806573">
+    <state width="1899" height="98" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1659778583925" />
+    <state width="1899" height="98" key="GridCell.Tab.0.right" timestamp="1659778583925">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="143" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1659685806573" />
+    <state width="1899" height="98" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1659778583925" />
     <state x="461" y="162" key="SettingsEditor" timestamp="1659449257461">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
