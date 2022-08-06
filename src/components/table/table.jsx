@@ -1,6 +1,8 @@
-import React, {useState, useMemo, useEffect} from 'react';
+import React, {useState, useEffect} from 'react';
 
 import useStyles from './styles';
+
+import Sorter from '../sorter/sorter.jsx';
 
 const Table = ({
     data = [],
@@ -20,6 +22,40 @@ const Table = ({
         setCurrentPage(value);
 
         return (data.slice(begin, end)).length;
+    };
+
+    const sort = ({field, dir, type}) => {
+        switch (type) {
+            case 'text': {
+                setTableData(data.sort((a, b) => {
+                    return dir === 'desc'
+                        ? a[field].localeCompare(b[field])
+                        : b[field].localeCompare(a[field])
+                }));
+                setPage(currentPage);
+                break;
+            }
+
+            case 'number': {
+                setTableData(data.sort((a, b) => {
+                    return dir === 'desc'
+                        ? a[field] - b[field]
+                        : b[field] - a[field]
+                }));
+                setPage(currentPage);
+                break;
+            }
+
+            case 'date': {
+                setTableData(data.sort((a, b) => {
+                    return dir === 'desc'
+                        ? Date.parse(a[field]) - Date.parse(b[field])
+                        : Date.parse(b[field]) - Date.parse(a[field])
+                }));
+                setPage(currentPage);
+                break;
+            }
+        }
     };
 
     useEffect(() => {
@@ -42,19 +78,49 @@ const Table = ({
                     <thead>
                     <tr>
                         <th>
-                            Порядковый номер
+                            <div className={classes.thContainer}>
+                                <h4>Порядковый номер</h4>
+                                <Sorter
+                                    type={'number'}
+                                    field={'episode_id'}
+                                    sort={sort}/>
+                            </div>
                         </th>
                         <th>
-                            Название эпизода
+                            <div className={classes.thContainer}>
+                                <h4>Название эпизода</h4>
+                                <Sorter
+                                    type={'text'}
+                                    field={'title'}
+                                    sort={sort}/>
+                            </div>
                         </th>
                         <th>
-                            Дата выхода
+                            <div className={classes.thContainer}>
+                                <h4>Дата выхода</h4>
+                                <Sorter
+                                    type={'date'}
+                                    field={'air_date'}
+                                    sort={sort}/>
+                            </div>
                         </th>
                         <th>
-                            Номер сезона
+                            <div className={classes.thContainer}>
+                                <h4>Номер сезона</h4>
+                                <Sorter
+                                    type={'text'}
+                                    field={'season'}
+                                    sort={sort}/>
+                            </div>
                         </th>
                         <th>
-                            Номер эпизода
+                            <div className={classes.thContainer}>
+                                <h4>Номер эпизода</h4>
+                                <Sorter
+                                    type={'text'}
+                                    field={'episode'}
+                                    sort={sort}/>
+                            </div>
                         </th>
                         <th/>
                     </tr>

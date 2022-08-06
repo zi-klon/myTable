@@ -36,7 +36,8 @@ export default createUseStyles({
                             height: 25,
                         },
                         '& :hover': {
-                            color: 'red'
+                            color: 'red',
+                            outline: '2px solid #98acb3'
                         }
                     },
                 },
@@ -73,5 +74,10 @@ export default createUseStyles({
             transition: 'background-color .7s',
             backgroundColor: 'white'
         }
+    },
+    thContainer: {
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center'
     }
 });
